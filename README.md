@@ -3,43 +3,42 @@ During my deep-dive into the N64's anatomy, I wanted to come up with a way to si
 
 I created the following document to keep track of the RCP-FFC-Cart connections. An xlsx version is included in the repo as well.
 
-<img src="https://github.com/CrazyGadgetMods/N64-RCP-Flex-Suite/blob/main/images/RCP-FFC/pinout" width=300>
+<img src="https://github.com/CrazyGadgetMods/N64-RCP-Flex-Suite/blob/main/images/RCP-FFC/pinout.PNG" width=1000>
 
 ## RCP-FFC
 This flex solders directly to the RCP on the N64. The only handwiring required is for PIF-1, PIF-3, PIF-5, PIF-7, PIF-23/24, CPU-57, and Sync (on the video DAC). Keep in mind that multiple PIF pins go to multiple places on the N64 motherboard, not just to the cart slot. As per the [N64 trimming guide](https://bitbuilt.net/forums/index.php?threads/the-advanced-n64-trimming-guide.3992/), those lines need to be wired to *all* of the marked locations.
 
-<img src="https://github.com/CrazyGadgetMods/N64-RCP-Flex-Suite/blob/main/images/RCP-FFC/layout" width=300>\
-<img src="https://github.com/CrazyGadgetMods/N64-RCP-Flex-Suite/blob/main/images/RCP-FFC/install1" width=300>
-<img src="https://github.com/CrazyGadgetMods/N64-RCP-Flex-Suite/blob/main/images/RCP-FFC/install2" width=300>
-<img src="https://github.com/CrazyGadgetMods/N64-RCP-Flex-Suite/blob/main/images/RCP-FFC/install3" width=300>
-<img src="https://github.com/CrazyGadgetMods/N64-RCP-Flex-Suite/blob/main/images/RCP-FFC/install4" width=300>
+<img src="https://github.com/CrazyGadgetMods/N64-RCP-Flex-Suite/blob/main/images/RCP-FFC/layout.PNG" width=500>\
+<img src="https://github.com/CrazyGadgetMods/N64-RCP-Flex-Suite/blob/main/images/RCP-FFC/install1.jpg" width=500>
+<img src="https://github.com/CrazyGadgetMods/N64-RCP-Flex-Suite/blob/main/images/RCP-FFC/install2.jpg" width=500>\
+<img src="https://github.com/CrazyGadgetMods/N64-RCP-Flex-Suite/blob/main/images/RCP-FFC/install3.jpg" width=500>
+<img src="https://github.com/CrazyGadgetMods/N64-RCP-Flex-Suite/blob/main/images/RCP-FFC/install4.jpg" width=500>
 
 I made two receiver PCBs for the replacement 50-pin cartridge slot. One with the FFC facing the *front* of the cartridge (not ideal for integrating into a portable), and one with the FFC facing the *back* of the cartridge (more ideal). I would recommend only using these boards as references, as they were not made with any kind of portable in-mind, and have an incorrect footprint for the cart edge connector.
 
 FFC facing the *front* of the cartridge:
 
-<img src="https://github.com/CrazyGadgetMods/N64-RCP-Flex-Suite/blob/main/images/RCP-FFC/cart-wrong-front" width=300>\
-<img src="https://github.com/CrazyGadgetMods/N64-RCP-Flex-Suite/blob/main/images/RCP-FFC/cart-wrong-back" width=300>
+<img src="https://github.com/CrazyGadgetMods/N64-RCP-Flex-Suite/blob/main/images/RCP-FFC/cart-wrong-front.png" width=1000>\
+<img src="https://github.com/CrazyGadgetMods/N64-RCP-Flex-Suite/blob/main/images/RCP-FFC/cart-wrong-back.png" width=1000>
 
 FFC facing the *back* of the cartridge:
 
-<img src="https://github.com/CrazyGadgetMods/N64-RCP-Flex-Suite/blob/main/images/RCP-FFC/cart-right-front" width=300>\
-<img src="https://github.com/CrazyGadgetMods/N64-RCP-Flex-Suite/blob/main/images/RCP-FFC/cart-right-back" width=300>
+<img src="https://github.com/CrazyGadgetMods/N64-RCP-Flex-Suite/blob/main/images/RCP-FFC/cart-right-front.png" width=1000>\
+<img src="https://github.com/CrazyGadgetMods/N64-RCP-Flex-Suite/blob/main/images/RCP-FFC/cart-right-back.png" width=1000>
 
 I did not check the row-to-row spacing for the replacement 50-pin connector, so it will not fit into these boards as-is. The pins need to be bent as shown if you want to use these boards.
 
-<img src="https://github.com/CrazyGadgetMods/N64-RCP-Flex-Suite/blob/main/images/RCP-FFC/pin-bend" width=300>
+<img src="https://github.com/CrazyGadgetMods/N64-RCP-Flex-Suite/blob/main/images/RCP-FFC/pin-bend.jpg" width=600>
 
 After testing the flex on a stock N64, I tested it and confirmed functionality on a trimmed board.
 
-<img src="https://github.com/CrazyGadgetMods/N64-RCP-Flex-Suite/blob/main/images/RCP-FFC/test1" width=300>
-<img src="https://github.com/CrazyGadgetMods/N64-RCP-Flex-Suite/blob/main/images/RCP-FFC/test2" width=300>
+<img src="https://github.com/CrazyGadgetMods/N64-RCP-Flex-Suite/blob/main/images/RCP-FFC/test.jpg" height=450> <img src="https://github.com/CrazyGadgetMods/N64-RCP-Flex-Suite/blob/main/images/RCP-FFC/test2.jpg" height=450>
 
 ## RCP Breakout Flex
 It's an RCP-FFC... without the FFC! It makes RCP wiring a whole lot nicer than soldering right to the IC. It does not include any 3v3 pads, as it can be pulled from a nearby source on the N64.
 
-<img src="https://github.com/CrazyGadgetMods/N64-RCP-Flex-Suite/blob/main/images/RCP Breakout Flex/layout.PNG" height=300> <img src="https://github.com/CrazyGadgetMods/N64-RCP-Flex-Suite/blob/main/images/RCP Breakout Flex/install.jpg" height=300>\
-<img src="https://github.com/CrazyGadgetMods/N64-RCP-Flex-Suite/blob/main/images/RCP Breakout Flex/test.jpg" height=300>
+<img src="https://github.com/CrazyGadgetMods/N64-RCP-Flex-Suite/blob/main/images/RCP Breakout Flex/layout.PNG" height=400> <img src="https://github.com/CrazyGadgetMods/N64-RCP-Flex-Suite/blob/main/images/RCP Breakout Flex/install.jpg" height=400>\
+<img src="https://github.com/CrazyGadgetMods/N64-RCP-Flex-Suite/blob/main/images/RCP Breakout Flex/test.jpg" height=600>
 
 ## Credits
 - [YveltalGriffin](https://github.com/mackieks): Answering my million questions and proving tips for designing flexes
