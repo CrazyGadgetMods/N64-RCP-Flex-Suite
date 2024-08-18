@@ -40,6 +40,9 @@ It's an RCP-FFC... without the FFC! It makes RCP wiring a whole lot nicer than s
 <img src="https://github.com/CrazyGadgetMods/N64-RCP-Flex-Suite/blob/main/images/RCP Breakout Flex/layout.PNG" height=300> <img src="https://github.com/CrazyGadgetMods/N64-RCP-Flex-Suite/blob/main/images/RCP Breakout Flex/install.jpg" height=300>\
 <img src="https://github.com/CrazyGadgetMods/N64-RCP-Flex-Suite/blob/main/images/RCP Breakout Flex/test.jpg" height=500>
 
+## Purchasing
+If interested in purchasing an RCP Breakout Flex (Pack of 2), [I am selling them on my Etsy store!](https://www.etsy.com/listing/1780416359)
+
 ## Credits
 - [YveltalGriffin](https://github.com/mackieks): Answering my million questions and proving tips for designing flexes
 - [Gman](https://github.com/Gmanmodz): Helping me learn the N64's anatomy
